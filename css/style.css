@@ -1,6 +1,6 @@
 nav {
   text-align: center;
-  background-color: #000000;
+  background-color: #3c6ff0;
   padding: 20px 0;
 }
 
@@ -65,4 +65,13 @@ a.skip-to-content:focus {
 
 h1 {
   display: none;
+}
+.gif-animation {
+  animation: spin 2s infinite linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gif-animation {
+    animation: none; /* Disable the animation for users who prefer reduced motion */
+  }
 }
